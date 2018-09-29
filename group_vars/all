@@ -1,6 +1,6 @@
 ---
 app_name: myapp
-app_package: flaskapp
+app_package: viewsapp
 app_callable: app
 base_dir: '/srv/{{ app_name }}'
 appdata_dir: '{{ base_dir }}/appdata'
@@ -15,7 +15,8 @@ uwsgi_env: []
 # Example for Django:
 # uwsgi_env:
 # - 'DJANGO_SETTINGS_MODULE={{ app_package }}.settings'
-git_repo: https://github.com/Kwpolska/flask-demo-app
+#git_repo: https://github.com/Kwpolska/flask-demo-app
+git_repo: https://github.com/tones7778/flask-starter.git
 git_branch: master
 # If this is set to "yes", the global nginx config will be replaced by one
 # that has no default hosts. This is based on the default config of your OS.
